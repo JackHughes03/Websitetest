@@ -149,3 +149,38 @@ window.addEventListener('resize', function(event){
 		navbuttonsdiv.style.marginLeft = '20px';
 	}
 });
+
+window.addEventListener('load', (event) => {
+	if (window.matchMedia("(min-width: 570px)").matches) {
+		navbuttonsdiv.style.display = 'block';
+		lines3.style.display = 'none';
+
+		navbuttonsdiv.style.height = '50px';
+		navbuttonsdiv.style.width = '500px';
+		servicesbutton.style.marginTop = '0px';
+		aboutbutton.style.marginTop = '0px';
+		contactbutton.style.marginTop = '0px';
+		homebutton.style.marginTop = '0px';
+
+		servicesbutton.style.border = 'none';
+		aboutbutton.style.border = 'none';
+		contactbutton.style.border = 'none';
+		homebutton.style.border = 'none';
+
+		navbuttonsdiv.style.border = 'none';
+		navbuttonsdiv.style.backgroundColor = 'transparent';
+		navbuttonsdiv.style.marginTop = '0px';
+		navbuttonsdiv.style.marginLeft = '20px';
+	} else {
+		navbuttonsdiv.style.display = 'none';
+		lines3.style.display = 'block';
+
+		lines3.style.marginTop = '10px';
+		hr1.style.display = 'block';
+		hr3.style.marginTop = '-3px';
+		hr2.style.marginTop = '-3px';
+		hr3.style.transform = 'rotate(0deg)';
+		hr2.style.transform = 'rotate(0deg)';
+		navbuttonsdiv.style.display = 'none';
+	}
+});
