@@ -47,7 +47,6 @@ function unblurimg() {
 
 var navbuttonsdiv = document.getElementById('navbuttonsdiv');
 var lines3 = document.getElementById('lines3');
-var documentit = 1;
 
 function menutouchscreen() {
 	var hr1 = document.getElementById('hr1');
@@ -74,8 +73,6 @@ function menutouchscreen() {
 		aboutbutton.style.marginTop = '0px';
 		contactbutton.style.marginTop = '0px';
 		homebutton.style.marginTop = '0px';
-
-		documentit += 1;
 	} else {
 		hr1.style.display = 'none';
 		hr3.style.marginTop = '-10px';
@@ -102,8 +99,6 @@ function menutouchscreen() {
 		aboutbutton.style.marginTop = '15px';
 		contactbutton.style.marginTop = '15px';
 		homebutton.style.marginTop = '15px';
-
-		documentit -= 1;
 	}
 }
 
@@ -127,7 +122,7 @@ window.addEventListener("resize", function() {
 		navbuttonsdiv.style.border = 'none';
 		navbuttonsdiv.style.backgroundColor = 'transparent';
 		navbuttonsdiv.style.marginTop = '0px';
-		navbuttonsdiv.style.marginLeft = '-82px';
+	
 	} else {
 		navbuttonsdiv.style.display = 'none';
 		lines3.style.display = 'block';
@@ -143,10 +138,9 @@ window.addEventListener("resize", function() {
 })
 
 window.addEventListener('resize', function(event){
-	if(documentit == 0) {
+
+	if(navbuttonsdiv.style.marginLeft == '0px') {
 		navbuttonsdiv.style.marginLeft = '-82px';
-	} else {
-		navbuttonsdiv.style.marginLeft = '20px';
 	}
 });
 
