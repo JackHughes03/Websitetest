@@ -106,9 +106,9 @@ p {
 
 #moonpic {
 	position: absolute;
-	right: 100px;
+	right: 0;
 	width: 40vw;
-	min-width: 400px;
+	min-width: 350px;
 	animation: rotation 60s infinite linear;
 }
 
