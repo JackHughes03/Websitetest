@@ -109,4 +109,14 @@ p {
 	right: 100px;
 	width: 40vw;
 	min-width: 400px;
+	animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
