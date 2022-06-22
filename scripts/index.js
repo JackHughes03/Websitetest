@@ -2,34 +2,43 @@ var servicesbutton = document.getElementById('servicesbutton');
 var aboutbutton = document.getElementById('aboutbutton');
 var contactbutton = document.getElementById('contactbutton');
 var homebutton = document.getElementById('homebutton');
+var gallerybutton = document.getElementById('gallerybutton');
 
 function navservices() {
 	servicesbutton.style.backgroundColor = '#009abb';
-
 	contactbutton.style.backgroundColor = 'transparent';
 	aboutbutton.style.backgroundColor = 'transparent';
 	homebutton.style.backgroundColor = 'transparent';
+	gallerybutton.style.backgroundColor = 'transparent';
 }
 
 function navabout() {
 	aboutbutton.style.backgroundColor = '#009abb';
-
 	contactbutton.style.backgroundColor = 'transparent';
 	servicesbutton.style.backgroundColor = 'transparent';
 	homebutton.style.backgroundColor = 'transparent';
+	gallerybutton.style.backgroundColor = 'transparent';
 }
 
 function navcontact() {
 	contactbutton.style.backgroundColor = '#009abb';
-
 	aboutbutton.style.backgroundColor = 'transparent';
 	servicesbutton.style.backgroundColor = 'transparent';
 	homebutton.style.backgroundColor = 'transparent';
+	gallerybutton.style.backgroundColor = 'transparent';
 }
 
 function navhome() {
 	homebutton.style.backgroundColor = '#009abb';
+	aboutbutton.style.backgroundColor = 'transparent';
+	servicesbutton.style.backgroundColor = 'transparent';
+	contactbutton.style.backgroundColor = 'transparent';
+	gallerybutton.style.backgroundColor = 'transparent';
+}
 
+function navgallery() {
+	gallerybutton.style.backgroundColor = '#009abb';
+	homebutton.style.backgroundColor = 'transparent';
 	aboutbutton.style.backgroundColor = 'transparent';
 	servicesbutton.style.backgroundColor = 'transparent';
 	contactbutton.style.backgroundColor = 'transparent';
@@ -67,7 +76,7 @@ function menutouchscreen() {
 		navbuttonsdiv.style.border = 'none';
 		navbuttonsdiv.style.backgroundColor = 'transparent';
 		navbuttonsdiv.style.marginTop = '0px';
-		navbuttonsdiv.style.marginLeft = '-82px';
+		navbuttonsdiv.style.marginLeft = '-45px';
 
 		servicesbutton.style.marginTop = '0px';
 		aboutbutton.style.marginTop = '0px';
@@ -102,8 +111,11 @@ function menutouchscreen() {
 	}
 }
 
+var servicescards = document.getElementById('servicescards');
+var onepagewebsiteservice = document.getElementById('onepagewebsiteservice');
+
 window.addEventListener("resize", function() {
-	if (window.matchMedia("(min-width: 570px)").matches) {
+	if (window.matchMedia("(min-width: 670px)").matches) {
 		navbuttonsdiv.style.display = 'block';
 		lines3.style.display = 'none';
 
@@ -122,7 +134,15 @@ window.addEventListener("resize", function() {
 		navbuttonsdiv.style.border = 'none';
 		navbuttonsdiv.style.backgroundColor = 'transparent';
 		navbuttonsdiv.style.marginTop = '0px';
-	
+
+
+
+
+
+		servicescards.style.height = '700px';
+		servicescards.style.width = '600px';
+
+		onepagewebsiteservice.style.marginTop = '0px';
 	} else {
 		navbuttonsdiv.style.display = 'none';
 		lines3.style.display = 'block';
@@ -134,18 +154,29 @@ window.addEventListener("resize", function() {
 		hr3.style.transform = 'rotate(0deg)';
 		hr2.style.transform = 'rotate(0deg)';
 		navbuttonsdiv.style.display = 'none';
+
+
+
+
+
+
+
+		servicescards.style.height = '1090px';
+		servicescards.style.width = '290px';
+
+		onepagewebsiteservice.style.marginTop = '380px';
 	}
 })
 
-window.addEventListener('resize', function(event){
+window.addEventListener('resize', function(event) {
 
 	if(navbuttonsdiv.style.marginLeft == '0px') {
-		navbuttonsdiv.style.marginLeft = '-82px';
+		navbuttonsdiv.style.marginLeft = '-45px';
 	}
 });
 
 window.addEventListener('load', (event) => {
-	if (window.matchMedia("(min-width: 570px)").matches) {
+	if (window.matchMedia("(min-width: 670px)").matches) {
 		navbuttonsdiv.style.display = 'block';
 		lines3.style.display = 'none';
 
@@ -165,6 +196,16 @@ window.addEventListener('load', (event) => {
 		navbuttonsdiv.style.backgroundColor = 'transparent';
 		navbuttonsdiv.style.marginTop = '0px';
 		navbuttonsdiv.style.marginLeft = '20px';
+
+
+
+
+
+
+		servicescards.style.height = '700px';
+		servicescards.style.width = '600px';
+
+		onepagewebsiteservice.style.marginTop = '0px';
 	} else {
 		navbuttonsdiv.style.display = 'none';
 		lines3.style.display = 'block';
@@ -176,5 +217,16 @@ window.addEventListener('load', (event) => {
 		hr3.style.transform = 'rotate(0deg)';
 		hr2.style.transform = 'rotate(0deg)';
 		navbuttonsdiv.style.display = 'none';
+
+
+
+
+
+
+
+		servicescards.style.height = '1090px';
+		servicescards.style.width = '290px';
+
+		onepagewebsiteservice.style.marginTop = '380px';
 	}
 });
