@@ -4,46 +4,6 @@ var contactbutton = document.getElementById('contactbutton');
 var homebutton = document.getElementById('homebutton');
 var gallerybutton = document.getElementById('gallerybutton');
 
-function navservices() {
-	servicesbutton.style.backgroundColor = '#009abb';
-	contactbutton.style.backgroundColor = 'transparent';
-	aboutbutton.style.backgroundColor = 'transparent';
-	homebutton.style.backgroundColor = 'transparent';
-	gallerybutton.style.backgroundColor = 'transparent';
-}
-
-function navabout() {
-	aboutbutton.style.backgroundColor = '#009abb';
-	contactbutton.style.backgroundColor = 'transparent';
-	servicesbutton.style.backgroundColor = 'transparent';
-	homebutton.style.backgroundColor = 'transparent';
-	gallerybutton.style.backgroundColor = 'transparent';
-}
-
-function navcontact() {
-	contactbutton.style.backgroundColor = '#009abb';
-	aboutbutton.style.backgroundColor = 'transparent';
-	servicesbutton.style.backgroundColor = 'transparent';
-	homebutton.style.backgroundColor = 'transparent';
-	gallerybutton.style.backgroundColor = 'transparent';
-}
-
-function navhome() {
-	homebutton.style.backgroundColor = '#009abb';
-	aboutbutton.style.backgroundColor = 'transparent';
-	servicesbutton.style.backgroundColor = 'transparent';
-	contactbutton.style.backgroundColor = 'transparent';
-	gallerybutton.style.backgroundColor = 'transparent';
-}
-
-function navgallery() {
-	gallerybutton.style.backgroundColor = '#009abb';
-	homebutton.style.backgroundColor = 'transparent';
-	aboutbutton.style.backgroundColor = 'transparent';
-	servicesbutton.style.backgroundColor = 'transparent';
-	contactbutton.style.backgroundColor = 'transparent';
-}
-
 function unblurimg() {
 	var unblurimg = document.getElementById('unblurimg');
 
@@ -82,6 +42,7 @@ function menutouchscreen() {
 		aboutbutton.style.marginTop = '0px';
 		contactbutton.style.marginTop = '0px';
 		homebutton.style.marginTop = '0px';
+		gallerybutton.style.marginTop = '0px';
 	} else {
 		hr1.style.display = 'none';
 		hr3.style.marginTop = '-10px';
@@ -95,6 +56,7 @@ function menutouchscreen() {
 		aboutbutton.style.border = '1px solid white';
 		contactbutton.style.border = '1px solid white';
 		homebutton.style.border = '1px solid white';
+		gallerybutton.style.border = '1px solid white';
 
 		navbuttonsdiv.style.height = '175px';
 		navbuttonsdiv.style.textAlign = 'center';
@@ -108,6 +70,7 @@ function menutouchscreen() {
 		aboutbutton.style.marginTop = '15px';
 		contactbutton.style.marginTop = '15px';
 		homebutton.style.marginTop = '15px';
+		gallerybutton.style.marginTop = '15px';
 	}
 }
 
@@ -125,19 +88,17 @@ window.addEventListener("resize", function() {
 		aboutbutton.style.marginTop = '0px';
 		contactbutton.style.marginTop = '0px';
 		homebutton.style.marginTop = '0px';
+		gallerybutton.style.marginTop = '0px';
 
 		servicesbutton.style.border = 'none';
 		aboutbutton.style.border = 'none';
 		contactbutton.style.border = 'none';
 		homebutton.style.border = 'none';
+		gallerybutton.style.border = 'none';
 
 		navbuttonsdiv.style.border = 'none';
 		navbuttonsdiv.style.backgroundColor = 'transparent';
 		navbuttonsdiv.style.marginTop = '0px';
-
-
-
-
 
 		servicescards.style.height = '700px';
 		servicescards.style.width = '600px';
@@ -154,12 +115,6 @@ window.addEventListener("resize", function() {
 		hr3.style.transform = 'rotate(0deg)';
 		hr2.style.transform = 'rotate(0deg)';
 		navbuttonsdiv.style.display = 'none';
-
-
-
-
-
-
 
 		servicescards.style.height = '1090px';
 		servicescards.style.width = '290px';
@@ -186,6 +141,7 @@ window.addEventListener('load', (event) => {
 		aboutbutton.style.marginTop = '0px';
 		contactbutton.style.marginTop = '0px';
 		homebutton.style.marginTop = '0px';
+		gallerybutton.style.marginTop = '0px';
 
 		servicesbutton.style.border = 'none';
 		aboutbutton.style.border = 'none';
@@ -196,11 +152,6 @@ window.addEventListener('load', (event) => {
 		navbuttonsdiv.style.backgroundColor = 'transparent';
 		navbuttonsdiv.style.marginTop = '0px';
 		navbuttonsdiv.style.marginLeft = '20px';
-
-
-
-
-
 
 		servicescards.style.height = '700px';
 		servicescards.style.width = '600px';
@@ -218,15 +169,47 @@ window.addEventListener('load', (event) => {
 		hr2.style.transform = 'rotate(0deg)';
 		navbuttonsdiv.style.display = 'none';
 
-
-
-
-
-
-
 		servicescards.style.height = '1090px';
 		servicescards.style.width = '290px';
 
 		onepagewebsiteservice.style.marginTop = '380px';
 	}
 });
+
+// function fullwebsiteclick() {
+// 	var fullwebsiteservice = document.getElementById('fullwebsiteservice');
+// 	var colourfullwebsiteservice = document.getElementById('colourfullwebsiteservice');
+// 	var textfullwebsite = document.getElementById('textfullwebsite');
+
+// 	if(m == 1) {
+// 		var m = 0;
+// 		var k = 0;
+// 		k += 180;
+// 		m += 1;
+// 		fullwebsiteservice.style.transform = "rotatey(" + k + "deg)";
+// 		fullwebsiteservice.style.transitionDuration = "0.5s";
+
+// 		colourfullwebsiteservice.style.backgroundColor = 'transparent';
+// 		textfullwebsite.style.color = 'transparent';
+// 		fullwebsiteservice.style.backgroundColor = 'gray';
+
+// 		colourfullwebsiteservice.style.transition = '500ms';
+// 		textfullwebsite.style.transition = '500ms';
+// 		fullwebsiteservice.style.transition = '500ms';
+// 	} else {
+// 		var m = 0;
+// 		var k2 = 0;
+// 		k2 += 360;
+// 		m -= 1;
+// 		fullwebsiteservice.style.transform = "rotatey(" + k2 + "deg)";
+// 		fullwebsiteservice.style.transitionDuration = "0.5s";
+
+// 		colourfullwebsiteservice.style.backgroundColor = 'lightblue';
+// 		textfullwebsite.style.color = 'transparent';
+// 		fullwebsiteservice.style.backgroundColor = 'gray';
+
+// 		colourfullwebsiteservice.style.transition = '500ms';
+// 		textfullwebsite.style.transition = '500ms';
+// 		fullwebsiteservice.style.transition = '500ms';
+// 	}
+// }

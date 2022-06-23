@@ -96,12 +96,14 @@ main {
 	margin-left: 20px;
 }
 
-#catchfrase {
+.catchfrase {
 	font-weight: lighter;
 	width: 330px;
+	margin-bottom: 0;
 }
 
 p {
+	margin-top: 10px;
 	opacity: 0.2;
 }
 
@@ -128,7 +130,6 @@ p {
 	}
 }
 
-
 #servicescards {
 /*	border: 1px solid white;*/
 	height: 700px;
@@ -144,11 +145,11 @@ p {
 	border-top-left-radius: 5px;
 	position: absolute;
 	width: 290px;
-	height: 100px;
+	height: 60px;
 }
 
 .h1titleservices {
-	margin-top: 110px;
+	margin-top: 70px;
 	margin-left: 10px;
 	font-weight: lighter;
 }
@@ -164,6 +165,10 @@ p {
 #colourcodehelpwebsiteservice {
 	background-color: lightgreen;
 }
+
+/*#colourfullwebsiteservice, #colouronepagewebsiteservice, #colourcodehelpwebsiteservice {
+	background-color: #009abb;
+}*/
 
 #fullwebsiteservice {
 	position: absolute;
@@ -204,4 +209,26 @@ p {
 	opacity: 0.3;
 	font-size: 12px;
 	margin-left: 10px;
+}
+
+#galleryimages {
+	width: 600px;
+	height: 700px;
+	border: 1px solid white;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.imagesgroup {
+	width: 200px;
+	position: absolute;
+	transform: translate(-50%);
+	left: 50%;
+}
+
+#example1 {
+	width: 300px;
+	height: 400px;
+	border: 1px solid white;
 }

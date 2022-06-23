@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
 	<title>Professional Web Developer South West</title>
 </head>
 <body>
@@ -15,10 +15,10 @@
 			<hr id="hr3">
 		</div>
 		<div id="navbuttonsdiv">
-			<a href="index.html" onclick="navhome()" id="homebutton" class="navbuttons">Home</a>
-			<a href="pages/services.html" onclick="navservices()" id="servicesbutton" class="navbuttons">Services</a>
+			<a href="../index.html" onclick="navhome()" id="homebutton" class="navbuttons">Home</a>
+			<a href="../pages/services.html" onclick="navservices()" id="servicesbutton" class="navbuttons">Services</a>
 			<a onclick="navabout()" id="aboutbutton" class="navbuttons">About</a>
-			<a href="pages/gallery.html" onclick="navgallery()" id="gallerybutton" class="navbuttons">Gallery</a>
+			<a onclick="navgallery()" id="gallerybutton" class="navbuttons">Gallery</a>
 			<a onclick="navcontact()" id="contactbutton" class="navbuttons">Contact</a>
 		</div>
 
@@ -29,14 +29,17 @@
 	</nav>
 
 	<main>
-		<h1 class="catchfrase">Keep up with modernity</h1>
-		<p>Professional websites developed<br> in the face of expectations</p>
+		<h1 class="catchfrase">Gallery</h1>
+		<p>View my work</p>
 	</main>
 
-	<img id="moonpic" src="images/moon.png">
+	<!-- <div id="galleryimages"> -->
+	<div id="example1">
+		<!-- <img class="imagesgroup" src="../images/gallery/example1.png"> -->
+	</div>
+		<!-- 	</div> -->
 
-	<!-- <img onclick="unblurimg()" id="unblurimg" src="images/lightbulb.jpg"> -->
-
-	<script src="scripts/index.js"></script>
+	<script src="../scripts/indexgallery.js"></script>
+	<script src="../scripts/index.js"></script>
 </body>
 </html>
